@@ -1,0 +1,41 @@
+#include<stdio.h>
+#include<string.h>
+
+int inverte(char strings[200])
+{
+    int i, tamanho;
+    printf("Digite uma string: ");
+    fgets(strings,200,stdin);
+
+    tamanho = strlen(strings);
+    printf("A string invertida : ");
+
+    for(i=tamanho; i>=0; i--)
+         {
+           printf("%c" ,strings[i]);
+         }
+    return strings;
+}
+
+int sem_vogal(char svogal[200])
+{
+    char ssvogal[200];
+    v
+    printf("Digite uma string pra ficar sem vogal: ");
+    fgets(strings,200,stdin);
+    
+    if((svogal == 'a')||(svogal == 'e')||
+       (svogal == 'i')||(svogal == 'o')||
+       (svogal == 'u')||(svogal == 'A')||(svogal == 'E')||
+       (svogal == 'I')||(svogal == 'O')||(svogal == 'U')){
+            svogal = ssvogal - 
+        
+       }
+    return strings;
+}
+
+int main(){
+    char n[200];
+    inverte(n);
+    return 0;
+}
