@@ -1,0 +1,32 @@
+//20230307_006 Crie uma função para somar dois arrays.
+//Esta função deve receber dois arrays e retornar a soma em um terceiro array.
+//Caso o tamanho do primeiro e segundo array seja
+//diferente então a função retornará ZERO (0).
+//Caso a função seja concluída com sucesso a mesma deve retornar o valor UM (1).
+//Utilize aritmética de ponteiros para manipulação do array.
+#include <stdio.h>
+#include <string.h>
+
+int soma(int *array1; int *array2; int *array3, int tamanho){
+    if(strlen(array1) != strlen(array2)){
+        return 0;
+    }
+    for (int i = 0; i <= strlen(array2); i++){
+        array3[i] = array1[i] + array2[i];
+    }
+    for(int j = 0; j < tamanho; j++){
+        printf("%d\n", array3[j]);
+    }
+    return 1;
+}
+
+int main(){
+    int array1[4] = {1,2,3,4,5};
+    int array2[4] = {1,2,3,4,5};
+    int array3[4];
+    int  tamanho = sizeof(array1) / sizeof(int);
+    if (soma(array1, array2, array3, tamanho) == 0){
+        printf("deu ruim");
+    }
+    else()
+}
