@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int qnt;
+    float* soma = 0;
+    float* notas;
+    int i;
+     
+    printf("Quantos alunos na turma?: ");
+    scanf("%d" , &qnt);
+    printf("Qntd: %d", qnt);
+    
+    while(qnt <= 0);
+    notas = (float*) malloc(qnt*sizeof(float));
+    if(notas != NULL){
+    	printf("Diga a notas: \n");
+    	scanf("%f", &notas[i]);
+    	soma = soma + notas[i];
+    	i++;
+	}
+	
+	printf("Soma : %f", soma);
+    free(notas);
+    return 0;
+}
